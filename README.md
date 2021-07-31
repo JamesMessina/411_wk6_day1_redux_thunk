@@ -1,6 +1,6 @@
 ## Setup
 
-hi
+hi2
 
 Clone this repo and run `npm i` and then `npm start`
 
