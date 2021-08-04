@@ -1,6 +1,10 @@
 import React from 'react'
 import { Button, Table, TableHead, TableBody, TableRow, TableCell, Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from "@material-ui/icons/Delete";
+
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -11,16 +15,16 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-
-
 const Import = (props) => {
     const classes = useStyles();
+
 
     return (
         <Container className={classes.root}>
             <Button onClick={props.fetchMakes} variant="contained" color="primary">
                 Import
             </Button>
+            <h2>Count:{props.makes.length}</h2>
             <Table>
                 <TableHead>
                     <TableRow>
@@ -30,11 +34,20 @@ const Import = (props) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {props.makes.map((make, idx) => (
+                    {props.makes.map((make) => (
                         <TableRow key={make.MakeId}>
                             <TableCell>{make.MakeId}</TableCell>
                             <TableCell>{make.MakeName}</TableCell>
-                            <TableCell></TableCell>
+                            <TableCell>
+                                <IconButton
+                                    aria-label="more"
+                                    aria-controls="long-menu"
+                                    aria-haspopup="true"
+                                    onClick={() => props.deleteMake(make.MakeId)}
+                                >
+                                    <DeleteIcon />
+                                </IconButton>
+                            </TableCell>
                         </TableRow>
                 ))}
                 </TableBody>

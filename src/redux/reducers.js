@@ -19,6 +19,8 @@ const makes = (state = [], action) => {
     switch(action.type) {
         case 'FETCH_MAKES' :
             return action.value
+        case 'DELETE_MAKE' :
+            return state.filter((make) => make.MakeId !== action.value)
         default:
             return state
     }

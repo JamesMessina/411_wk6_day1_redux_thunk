@@ -27,3 +27,11 @@ export const fetchMakes = () =>{
             })
     }
 }
+
+export const deleteMake = (makeId) =>{
+    console.log(makeId)
+    return {
+        type: 'DELETE_MAKE',
+        value: makeId
+    }
+}
