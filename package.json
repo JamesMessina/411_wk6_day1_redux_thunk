@@ -1,4 +1,5 @@
 {
+    "homepage": "https://jamesmessina.github.io/411_wk6_day1_redux_thunk/",
     "name": "instructor_411_wk5_day1_mapstatetoprops",
     "version": "0.1.0",
     "private": true,
@@ -16,6 +17,8 @@
         "redux-thunk": "^2.3.0"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
