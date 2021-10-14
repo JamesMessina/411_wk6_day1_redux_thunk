@@ -20,7 +20,8 @@ ul {
 
 .flex-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: 50px 0;
 }
 

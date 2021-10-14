@@ -6,7 +6,7 @@ const Chart = (props) => {
     const under = props.cars.filter(c => c.horsepower < 200)
 
     return (
-        <div>
+        <div style={{marginLeft: "10px"}}>
             <PieChart style={{ width: '200px' }}
                 data={[
                     { title: 'Over', value: over.length, color: '#C13C37' },

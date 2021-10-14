@@ -48,7 +48,7 @@ class AddCar extends Component {
     render() {
         return (
             <Fragment>
-                <div style={{ textAlign: 'center' }}>
+                <div style={{ textAlign: 'center', paddingLeft: "70px"}}>
                     <h1>Add Car:</h1>
                     <Button
                         variant="contained"

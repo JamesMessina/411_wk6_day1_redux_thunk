@@ -10,6 +10,12 @@ const cars = (state = [], action) => {
             const cars = [ ...state ]
             cars.splice(action.value, 1)
             return cars
+        case 'UPDATE_CAR':
+            const carsCopy = [ ...state ]
+            let foundCarIndex = carsCopy.findIndex((car) => car.id == action.value.id)
+            console.log(foundCarIndex)
+            carsCopy.splice(foundCarIndex, 1, action.value)
+            return carsCopy
         default:
             return state
     }
