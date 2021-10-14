@@ -18,6 +18,7 @@ import Total from '../containers/Total'
 import AddCar from '../containers/AddCar'
 import LoopIcon from '@material-ui/icons/Loop';
 import IconButton from '@material-ui/core/IconButton'
+import { updateCar } from '../redux/actions'
 
 const Dashboard = (props) => {
 
@@ -41,8 +42,8 @@ const Dashboard = (props) => {
         delete UpdatedCarPayload.open
         console.log("updated car", UpdatedCarPayload)
         props.updateCar(UpdatedCarPayload)
+        console.log("car updated")
         setOpen(false)
-        
     }
 
     return (
@@ -100,7 +101,7 @@ const Dashboard = (props) => {
                                 <TextField 
                                     id="id" 
                                     placeholder="Car Id" 
-                                    value={UpdatedCar.car_id} 
+                                    value={UpdatedCar.id} 
                                     onChange={(e) => handleTextChange(e)} 
                                     required />
                                 <TextField 
