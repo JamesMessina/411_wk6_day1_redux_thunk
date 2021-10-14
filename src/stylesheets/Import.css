@@ -1,0 +1,7 @@
+@media(max-width: 425px){
+    .button-count-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

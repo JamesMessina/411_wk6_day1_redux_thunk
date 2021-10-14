@@ -18,7 +18,7 @@ import Total from '../containers/Total'
 import AddCar from '../containers/AddCar'
 import LoopIcon from '@material-ui/icons/Loop';
 import IconButton from '@material-ui/core/IconButton'
-import { updateCar } from '../redux/actions'
+import '../stylesheets/Dashboard.css'
 
 const Dashboard = (props) => {
 

@@ -3,7 +3,7 @@ import { Button, Table, TableHead, TableBody, TableRow, TableCell, Container } f
 import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from "@material-ui/icons/Delete";
-
+import '../stylesheets/Import.css'; 
 
 
 const useStyles = makeStyles((theme) => ({
@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '20px'
       },
     },
+
 }));
 
 const Import = (props) => {
@@ -21,11 +22,13 @@ const Import = (props) => {
 
     return (
         <Container className={classes.root}>
-            <Button onClick={props.fetchMakes} variant="contained" color="primary">
-                Import
-            </Button>
-            <h2>Count:{props.makes.length}</h2>
-            <Table>
+            <div className="button-count-container">
+                <Button onClick={props.fetchMakes} variant="contained" color="primary">
+                    Import
+                </Button>
+                <h2>Count:{props.makes.length}</h2>
+            </div>
+            <Table className="table">
                 <TableHead>
                     <TableRow>
                         <TableCell>Id</TableCell>

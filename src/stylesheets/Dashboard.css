@@ -1,0 +1,16 @@
+@media(max-width: 768px){
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media(max-width: 425px){
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
