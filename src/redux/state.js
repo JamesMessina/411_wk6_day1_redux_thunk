@@ -77,35 +77,35 @@ export default {
         {
            "id": 11,
            "name":"citroen ds-21 pallas",
-           "mpg": "unknown",
+           "mpg": 17,
            "cylinders":4,
            "horsepower":115
         },
         {
            "id": 12,
            "name":"chevrolet chevelle concours (sw)",
-           "mpg": "unknown",
+           "mpg": 18,
            "cylinders":8,
            "horsepower":165
         },
         {
            "id": 13,
            "name":"ford torino (sw)",
-           "mpg": "unknown",
+           "mpg": 17,
            "cylinders":8,
            "horsepower":153
         },
         {
            "id": 14,
            "name":"plymouth satellite (sw)",
-           "mpg": "unknown",
+           "mpg": 17,
            "cylinders":8,
            "horsepower":175
         },
         {
            "id": 15,
            "name":"amc rebel sst (sw)",
-           "mpg": "unknown",
+           "mpg": 17,
            "cylinders":8,
            "horsepower":175
         },
@@ -126,7 +126,7 @@ export default {
         {
            "id": 18,
            "name":"ford mustang boss 302",
-           "mpg": "unknown",
+           "mpg": 17,
            "cylinders":8,
            "horsepower":140
         },

@@ -14,6 +14,9 @@ const cars = (state = [], action) => {
             const carsCopy = [ ...state ]
             let foundCarIndex = carsCopy.findIndex((car) => car.id == action.value.id)
             console.log(foundCarIndex)
+            if(foundCarIndex < 0){
+                return state
+            }
             carsCopy.splice(foundCarIndex, 1, action.value)
             return carsCopy
         default:

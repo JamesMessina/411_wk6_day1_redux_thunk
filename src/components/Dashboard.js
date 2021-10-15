@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useEffect, useRef } from 'react'
+import React, { useState, Fragment } from 'react'
 import {
     Container,
     Table,
