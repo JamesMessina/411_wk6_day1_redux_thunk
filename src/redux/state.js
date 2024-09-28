@@ -1,6 +1,6 @@
 export default {
     user: {
-        username: 'test-user-1',
+        username: 'John Messina test',
         email: 'test-user@example.com'
     },
     cars: [
